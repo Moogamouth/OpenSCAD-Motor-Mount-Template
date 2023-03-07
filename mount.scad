@@ -11,7 +11,7 @@ module motor_mount(motor_width, motor_height, opening_radius, screw_offset, scre
             //screw holes
             for (x =[-screw_offset, screw_offset])
                 for (z =[-screw_offset, screw_offset])
-                    translate([x, 0, z]) rotate([90, 0, 0])     cylinder (h = mount_thickness + 1, r=screw_radius, center = true, $fn=100);
+                    translate([x, 0, z]) rotate([90, 0, 0]) cylinder (h = mount_thickness + 1, r=screw_radius, center = true, $fn=100);
                 
     }
     
